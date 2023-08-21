@@ -1,0 +1,16 @@
+{
+  "name": "001_gfg-dsa",
+  "version": "1.0.0",
+  "description": "This repository contains basic data structure problems from Geeks for Geeks in JavaScript and TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "typescript": "^5.1.6"
+  }
+}
