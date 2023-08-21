@@ -1,21 +1,21 @@
 // Program to remove duplicates from a sorted array arr
 
-// Time complexity is O(n)
+// Time complexity is O(n) and Auxillary Space Complexity is O(1)
 function removeDuplicateElements(arr) {
-  let j = 0;
+  let res = 1;
   if (arr.length === 0 || arr.length === 1) {
     return arr;
   }
-  const arr2 = [arr[0]];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr2[j] !== arr[i]) {
-      arr2.push(arr[i]);
-      j++;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] !== arr[res - 1]) {
+      arr[res] = arr[i];
+      res++;
     }
   }
-  for (let i = 0; i < arr.length; i++) {
-    arr[i] = arr2[i];
+  for (let i = res; i < arr.length; i++) {
+    arr[i] = undefined;
   }
+
   return arr;
 }
 
