@@ -38,7 +38,14 @@ Install dependencies
 Run individual files in directory directory_name with file name file_name using below command
 
 ```bash
-  nodemon ./directory_name/file_name
+  npx nodemon ./directory_name/file_name
+```
+
+To exit nodemon press Ctrl + C and then click y
+
+```bash
+  Ctrl + C
+  y
 ```
 
 ## Lessons Learned
